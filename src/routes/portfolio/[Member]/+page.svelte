@@ -12,7 +12,7 @@
             <p class="py-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-primary" onclick={() => window.open(`${data.link}`)}>See More about {data.title}</button>
         </div>
     </div>
 </section>
