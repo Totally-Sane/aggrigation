@@ -1,17 +1,15 @@
 <script lang="ts">
-    import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
-    let { data }: { data: PageData } = $props();
+	let { data }: { data: PageProps } = $props();
 </script>
 
-<section class="hero min-h-screen bg-base-200">
-    <div class="hero-content text-center">
-        <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Services!</h1>
-            <p class="py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
-            </p>
-            <button class="btn btn-primary">Get Started</button>
-        </div>
-    </div>
-</section>
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+	{#each data.services as service}
+		<div class="card bg-base-100 shadow-xl">
+			<div class="card-body">
+				<h2 class="card-title justify-center">{service.name}</h2>
+			</div>
+		</div>
+	{/each}
+</div>

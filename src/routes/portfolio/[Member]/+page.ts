@@ -2,7 +2,6 @@ import type { PageLoad } from './$types';
 
 export const load:PageLoad = (async ({params}) => {
     let link;
-
     switch (params.Member.toLowerCase()) {
         case "carlo":
             link = "https://github.com/IncredibleZuess";

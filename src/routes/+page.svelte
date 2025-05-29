@@ -9,7 +9,7 @@
 			<p class="py-6">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
 			</p>
-			<button class="btn btn-primary">Get Started</button>
+			<button class="btn btn-primary" onclick={() => window.open(`https://github.com/Totally-Sane`)}>Get Started</button>
 		</div>
 	</div>
 </section>

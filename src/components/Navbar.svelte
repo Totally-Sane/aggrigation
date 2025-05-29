@@ -23,7 +23,6 @@
         <button class="btn btn-ghost btn-circle">
             <div class="indicator">
                 <LogIn />
-                <span class="badge badge-xs badge-primary indicator-item"></span>
             </div>
         </button>
     </div>

@@ -2,7 +2,6 @@
     import type { PageProps } from './$types';
 
     let { data }: { data: PageProps } = $props();
-    console.log(data);
 </script>
 
 <section class="hero min-h-screen bg-base-200">
